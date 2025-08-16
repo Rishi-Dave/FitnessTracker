@@ -1,0 +1,32 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-fitnesstracker-dev-ddc8d-authRole",
+      "UnauthRoleArn": "arn:aws:iam::367908190348:role/amplify-fitnesstracker-dev-ddc8d-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::367908190348:role/amplify-fitnesstracker-dev-ddc8d-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-fitnesstracker-dev-ddc8d-deployment",
+      "UnauthRoleName": "amplify-fitnesstracker-dev-ddc8d-unauthRole",
+      "StackName": "amplify-fitnesstracker-dev-ddc8d",
+      "StackId": "arn:aws:cloudformation:us-west-1:367908190348:stack/amplify-fitnesstracker-dev-ddc8d/48493440-7ae2-11f0-872c-0250388f6379",
+      "AmplifyAppId": "dnjkufdijzs70"
+    },
+    "categories": {
+      "auth": {
+        "fitnesstracker540849b4": {}
+      },
+      "function": {
+        "S3Triggerab59a9b4": {
+          "deploymentBucketName": "amplify-fitnesstracker-dev-ddc8d-deployment",
+          "s3Key": "amplify-builds/S3Triggerab59a9b4-4f7a534747767a6a6f68-build.zip"
+        }
+      },
+      "api": {
+        "fitnesstracker": {}
+      },
+      "storage": {
+        "s385cc2984": {}
+      }
+    }
+  }
+}

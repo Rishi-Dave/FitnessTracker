@@ -1,0 +1,110 @@
+# this is an auto generated file. This will be overwritten
+
+query GetWorkoutSession($id: ID!) {
+  getWorkoutSession(id: $id) {
+    id
+    userId
+    startTime
+    endTime
+    distance
+    duration
+    locations {
+      nextToken
+      __typename
+    }
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+query ListWorkoutSessions(
+  $filter: ModelWorkoutSessionFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listWorkoutSessions(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      userId
+      startTime
+      endTime
+      distance
+      duration
+      createdAt
+      updatedAt
+      __typename
+    }
+    nextToken
+    __typename
+  }
+}
+
+query GetLocationData($id: ID!) {
+  getLocationData(id: $id) {
+    id
+    sessionId
+    latitude
+    longitude
+    altitude
+    timestamp
+    createdAt
+    updatedAt
+    workoutSessionLocationsId
+    __typename
+  }
+}
+
+query ListLocationData(
+  $filter: ModelLocationDataFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listLocationData(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      sessionId
+      latitude
+      longitude
+      altitude
+      timestamp
+      createdAt
+      updatedAt
+      workoutSessionLocationsId
+      __typename
+    }
+    nextToken
+    __typename
+  }
+}
+
+query LocationsBySession(
+  $sessionId: ID!
+  $sortDirection: ModelSortDirection
+  $filter: ModelLocationDataFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  locationsBySession(
+    sessionId: $sessionId
+    sortDirection: $sortDirection
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      sessionId
+      latitude
+      longitude
+      altitude
+      timestamp
+      createdAt
+      updatedAt
+      workoutSessionLocationsId
+      __typename
+    }
+    nextToken
+    __typename
+  }
+}

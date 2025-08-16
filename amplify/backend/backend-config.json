@@ -1,0 +1,90 @@
+{
+  "api": {
+    "fitnesstracker": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
+  "auth": {
+    "fitnesstracker540849b4": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "S3Triggerab59a9b4": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_S3Triggerab59a9b4_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "S3Triggerab59a9b4"
+        }
+      ]
+    },
+    "AMPLIFY_function_S3Triggerab59a9b4_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "S3Triggerab59a9b4"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "s385cc2984": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "LambdaExecutionRole"
+          ],
+          "category": "function",
+          "resourceName": "S3Triggerab59a9b4"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    }
+  }
+}

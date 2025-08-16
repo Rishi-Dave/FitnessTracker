@@ -1,0 +1,112 @@
+# this is an auto generated file. This will be overwritten
+
+subscription OnCreateWorkoutSession(
+  $filter: ModelSubscriptionWorkoutSessionFilterInput
+) {
+  onCreateWorkoutSession(filter: $filter) {
+    id
+    userId
+    startTime
+    endTime
+    distance
+    duration
+    locations {
+      nextToken
+      __typename
+    }
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnUpdateWorkoutSession(
+  $filter: ModelSubscriptionWorkoutSessionFilterInput
+) {
+  onUpdateWorkoutSession(filter: $filter) {
+    id
+    userId
+    startTime
+    endTime
+    distance
+    duration
+    locations {
+      nextToken
+      __typename
+    }
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnDeleteWorkoutSession(
+  $filter: ModelSubscriptionWorkoutSessionFilterInput
+) {
+  onDeleteWorkoutSession(filter: $filter) {
+    id
+    userId
+    startTime
+    endTime
+    distance
+    duration
+    locations {
+      nextToken
+      __typename
+    }
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnCreateLocationData(
+  $filter: ModelSubscriptionLocationDataFilterInput
+) {
+  onCreateLocationData(filter: $filter) {
+    id
+    sessionId
+    latitude
+    longitude
+    altitude
+    timestamp
+    createdAt
+    updatedAt
+    workoutSessionLocationsId
+    __typename
+  }
+}
+
+subscription OnUpdateLocationData(
+  $filter: ModelSubscriptionLocationDataFilterInput
+) {
+  onUpdateLocationData(filter: $filter) {
+    id
+    sessionId
+    latitude
+    longitude
+    altitude
+    timestamp
+    createdAt
+    updatedAt
+    workoutSessionLocationsId
+    __typename
+  }
+}
+
+subscription OnDeleteLocationData(
+  $filter: ModelSubscriptionLocationDataFilterInput
+) {
+  onDeleteLocationData(filter: $filter) {
+    id
+    sessionId
+    latitude
+    longitude
+    altitude
+    timestamp
+    createdAt
+    updatedAt
+    workoutSessionLocationsId
+    __typename
+  }
+}

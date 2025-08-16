@@ -1,0 +1,118 @@
+# this is an auto generated file. This will be overwritten
+
+mutation CreateWorkoutSession(
+  $input: CreateWorkoutSessionInput!
+  $condition: ModelWorkoutSessionConditionInput
+) {
+  createWorkoutSession(input: $input, condition: $condition) {
+    id
+    userId
+    startTime
+    endTime
+    distance
+    duration
+    locations {
+      nextToken
+      __typename
+    }
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation UpdateWorkoutSession(
+  $input: UpdateWorkoutSessionInput!
+  $condition: ModelWorkoutSessionConditionInput
+) {
+  updateWorkoutSession(input: $input, condition: $condition) {
+    id
+    userId
+    startTime
+    endTime
+    distance
+    duration
+    locations {
+      nextToken
+      __typename
+    }
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation DeleteWorkoutSession(
+  $input: DeleteWorkoutSessionInput!
+  $condition: ModelWorkoutSessionConditionInput
+) {
+  deleteWorkoutSession(input: $input, condition: $condition) {
+    id
+    userId
+    startTime
+    endTime
+    distance
+    duration
+    locations {
+      nextToken
+      __typename
+    }
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation CreateLocationData(
+  $input: CreateLocationDataInput!
+  $condition: ModelLocationDataConditionInput
+) {
+  createLocationData(input: $input, condition: $condition) {
+    id
+    sessionId
+    latitude
+    longitude
+    altitude
+    timestamp
+    createdAt
+    updatedAt
+    workoutSessionLocationsId
+    __typename
+  }
+}
+
+mutation UpdateLocationData(
+  $input: UpdateLocationDataInput!
+  $condition: ModelLocationDataConditionInput
+) {
+  updateLocationData(input: $input, condition: $condition) {
+    id
+    sessionId
+    latitude
+    longitude
+    altitude
+    timestamp
+    createdAt
+    updatedAt
+    workoutSessionLocationsId
+    __typename
+  }
+}
+
+mutation DeleteLocationData(
+  $input: DeleteLocationDataInput!
+  $condition: ModelLocationDataConditionInput
+) {
+  deleteLocationData(input: $input, condition: $condition) {
+    id
+    sessionId
+    latitude
+    longitude
+    altitude
+    timestamp
+    createdAt
+    updatedAt
+    workoutSessionLocationsId
+    __typename
+  }
+}
